@@ -1,0 +1,31 @@
+// Copyright (C) 2026 NotepadMd contributors
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+#include <windows.h>
+#include "Version.h"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION NOTEPADMD_VERSION_MAJOR,NOTEPADMD_VERSION_MINOR,NOTEPADMD_VERSION_PATCH,NOTEPADMD_VERSION_BUILD
+ PRODUCTVERSION NOTEPADMD_VERSION_MAJOR,NOTEPADMD_VERSION_MINOR,NOTEPADMD_VERSION_PATCH,NOTEPADMD_VERSION_BUILD
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "NotepadMd contributors\0"
+            VALUE "FileDescription", "Markdown heading folding plugin for Notepad++\0"
+            VALUE "FileVersion", NOTEPADMD_VERSION_STRING "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 NotepadMd contributors\0"
+            VALUE "ProductName", "NotepadMd\0"
+            VALUE "ProductVersion", NOTEPADMD_VERSION_STRING "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
